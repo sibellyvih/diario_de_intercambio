@@ -10,31 +10,52 @@ body {
 header {
     color: black;
     background: white;
-    padding: 40px;
+    padding: 40px 0;
+}
+
+h1 {
+  font-size: 30px;
+  opacity: 0; /* Inicialmente invisível */
+  transform: translateY(-50px); /* Posição inicial acima */
+  animation: titleEntrance 1s forwards; /* Animação de entrada */
 }
 
 .caixa {
-    position: relative;
-    width: 940px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos nas extremidades */
+  align-items: center; /* Centraliza verticalmente os elementos */
   }
   
+.caixa h1 {
+  padding-left: 300px;
+}
+
   nav {
     position: absolute;
-    right: 0;
+    right: 400px;
   }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os itens da lista horizontalmente */
+}
   
   nav li {
-    display: inline;
-    margin: 0 0 0 15px;
+    margin-right: 15px; /* Espaçamento entre os itens de navegação */
   }
   
   nav a {
-    text-transform: uppercase;
     color: black;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
+  }
+
+  nav a:hover {
+    color: rgb(138, 59, 125);
+    text-decoration: underline;
   }
 
 .titulo-principal {
@@ -45,7 +66,6 @@ header {
 }
 
 .titulo-principal h1{
-    font-size: 50px;
     text-align: center;
     font-size: 50px;
     opacity: 0; /* Inicialmente invisível */
@@ -89,8 +109,15 @@ p {
     max-height: 40px; /* Ajuste a altura da imagem */
   }
   
-  .rodape .redes-sociais {
+.rodape .redes-sociais {
     display: flex;
     justify-content: center; /* Centralizar horizontalmente */
     margin: 0 20px;
+  }
+
+  .copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
+    padding: 10px;
   }
