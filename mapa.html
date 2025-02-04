@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recet.css">
+  <link rel="stylesheet" href="mapa.css">
+  <link rel="stylesheet" href="script.js">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="reveal.js" defer></script>
+  <title>Mapa</title>
+</head>
+
+<body>
+  <header>
+    <div class="caixa">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diario.html">Diário</a></li>
+          <li><a href="mapa.html">Mapa</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button onclick="animarMenu()" id="botao-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
+
+    <script>
+      function animarMenu() {
+        const btn = document.getElementById('botao-menu')
+        btn.classList.toggle('ativar')
+      }
+    </script>
+
+    <div class="caixa-mobile" id="caixa-mobile">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diario.html">Diário</a></li>
+          <li><a href="mapa.html">Mapa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="animar.js"></script>
+
+  <div class="titulo-principal">
+    <h1>My map</h1>
+  </div>
+
+  <h2>Lugares que visitei</h2>
+
+  <figure>
+    <img src="mapa.jpeg" alt="explorando a ilha norte">
+    <figcaption>Explorando a Ilha Norte.</figcaption>
+  </figure>
+
+  <footer class="rodape">
+    <h2>Meu diário de intercâmbio <br>By Sibelly</h2>
+    <p>Siga minhas redes sociais</p>
+    <div class="redes-sociais">
+      <a href="https://www.facebook.com/sibellyvitoria.antonio" target="_blank"><img class="efeito-na-imagem1"
+          src="facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img class="efeito-na-imagem2" src="instagram.png"
+          alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@sibellyvi?is_from_webapp=1&sender_device=pc" target="_blank"><img
+          class="efeito-na-imagem3" src="tiktok.png" alt="Tiktok"></a>
+      <a href="https://www.youtube.com/@sibellyvi/featured" target="_blank"><img class="efeito-na-imagem4"
+          src="youtube.png" alt="YouTube"></a>
+    </div>
+    <p class="copyright">&copy; Copyright Meu diário de intercâmbio - 2023-2025</p>
+  </footer>
+</body>
+
+</html>

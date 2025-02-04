@@ -1,106 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+IN:wght@100..400&display=swap');
+
+
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
+
 body {
-    font-family: 'Arial', sans-serif;
-    background: white;
+  font-family: 'Arial', sans-serif;
+  background: white;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 
 header {
-    color: black;
-    background: white;
-    padding: 40px 0;
+  color: black;
+  background: white;
+  padding: 50px 0;
+}
+
+.titulo-principal {
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #e195e2 100%);
+  color: white;
+  padding: 50px;
 }
 
 h1 {
   font-size: 30px;
-  opacity: 0; /* Inicialmente invisível */
-  transform: translateY(-50px); /* Posição inicial acima */
-  animation: titleEntrance 1s forwards; /* Animação de entrada */
+  opacity: 0;
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
+  /* Animação de entrada */
+}
+
+.titulo-principal h1 {
+  text-align: center;
+  opacity: 0;
+  /* Inicialmente invisível */
+  transform: translateY(-50px);
+  /* Posição inicial acima */
+  animation: titleEntrance 1s forwards;
+  /* Animação de entrada */
 }
 
 /* Animação de entrada */
 @keyframes titleEntrance {
-    to {
-      opacity: 1; /* Torna o título visível */
-      transform: translateY(0); /* Retorna à posição original */
-    }
+  to {
+    opacity: 1;
+    /* Torna o título visível */
+    transform: translateY(0);
+    /* Retorna à posição original */
+  }
 }
 
-h1 {
-    font-size: 30px;
-    opacity: 0; /* Inicialmente invisível */
-    transform: translateY(-50px); /* Posição inicial acima */
-    animation: titleEntrance 1s forwards; /* Animação de entrada */
-  }
-  
-  .caixa {
-    display: flex;
-    justify-content: space-between; /* Alinha os elementos nas extremidades */
-    align-items: center; /* Centraliza verticalmente os elementos */
-    }
-    
-  .caixa h1 {
-    padding-left: 300px;
-  }
-  
-    nav {
-      position: absolute;
-      right: 400px;
-    }
-  
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex; /* Alinha os itens da lista horizontalmente */
-  }
-    
-    nav li {
-      margin-right: 15px; /* Espaçamento entre os itens de navegação */
-    }
-  
+.caixa {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
 nav a {
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-  }
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
 
 nav a:hover {
-    color: rgb(138, 59, 125);
-    text-decoration: underline;
-  }
+  color: rgb(138, 59, 125);
+  text-decoration: underline;
+}
 
-  p {
-    padding: 20px;
+p {
+  padding: 20px;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.data {
+  padding: 20px;
+}
+
+.local {
+  color: rgb(0, 0, 72);
+}
+
+.escrita-diario {
+  text-align: justify;
+  text-indent: 10px;
+  padding: 10px 40px;
+}
+
+.imagens-diario {
+  display: flex;
+  justify-content: center;
+  /* Centraliza o conjunto de figuras no container */
+  gap: 20px;
+  /* Reduz o espaço entre as figuras */
+}
+
+.imagens-diario figure {
+  text-align: center;
+  padding: 10px;
+}
+
+.imagens-diario img {
+  width: 300px;
 }
 
 .rodape {
-    background: rgb(41, 69, 122);
-    color: white;
-    text-align: center;
-    padding: 100px 0;
+  background: rgb(41, 69, 122);
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.rodape h2 {
+  font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .rodape img {
-    max-height: 40px; /* Ajuste a altura da imagem */
-  }
-  
+  max-height: 40px;
+  /* Ajuste a altura da imagem */
+}
+
 .rodape .redes-sociais {
-    display: flex;
-    justify-content: center; /* Centralizar horizontalmente */
-    margin: 0 20px;
-  }
+  display: flex;
+  justify-content: center;
+  /* Centralizar horizontalmente */
+  margin: 0 20px;
+  gap: 20px;
+}
 
 .copyright {
-    color: #FFFFFF;
-    font-size: 13px;
-    margin: 20px 0 0;
-    padding: 10px;
+  color: #FFFFFF;
+  font-size: 13px;
+  margin: 20px 0 0;
+  padding: 10px;
+}
+
+/* ESTILIZAÇÃO DO MENU-MOBILE */
+.caixa-mobile {
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #e195e2 100%);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 100%;
+  height: 0;
+  z-index: 10;
+  visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.caixa-mobile nav a {
+  color: white;
+  display: block;
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.caixa-mobile nav a:hover {
+  background-color: rgb(217, 0, 127);
+}
+
+#botao-menu {
+  background: transparent;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  cursor: pointer;
+  border: 5px solid rgba(17, 0, 91, 0.711);
+  border-radius: 2px;
+  transition: 0.2s;
+  display: none;
+}
+
+.linha {
+  position: relative;
+  width: 20px;
+  height: 3px;
+  background-color: rgba(17, 0, 91, 0.711);
+  display: block;
+  margin: 5px auto;
+  transform-origin: center;
+  transition: 0.2s;
+}
+
+#botao-menu.ativar {
+  border: 5px solid red;
+}
+
+#botao-menu.ativar .linha:nth-child(1) {
+  transform: translateY(8px) rotate(-45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(3) {
+  transform: translateY(-8px) rotate(45deg);
+  background-color: red;
+}
+
+#botao-menu.ativar .linha:nth-child(2) {
+  width: 0;
+}
+
+.titulo,
+.direita,
+.esquerda,
+.efeito-na-imagem1,
+.efeito-na-imagem2,
+.efeito-na-imagem3,
+.efeito-na-imagem4 {
+  visibility: hidden;
+}
+
+/*RESPONSIVIDADE PARA CELULAR*/
+@media screen and (max-width: 1100px) {
+
+  /* MENU */
+  .caixa {
+    display: none;
   }
+
+  .caixa-mobile.abrir {
+    visibility: visible;
+    height: calc(100vh - 50px);
+  }
+
+  #botao-menu {
+    display: block;
+  }
+
+  .caixa-mobile nav {
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+
+  /*CABEÇALHO*/
+  header {
+    padding: 0px;
+  }
+
+  /*TÍTULOS*/
+  .titulo-principal h1 {
+    font-size: 24px;
+  }
+
+  .titulo-principal {
+    padding: 40px;
+  }
+
+  /*DIÁRIO*/
+  .imagens-diario {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .imagens-diario img {
+    width: 100%;
+  }
+
+  /*RODAPÉ*/
+  .rodape h2 {
+    font-size: 20px;
+  }
+}
