@@ -2,83 +2,88 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="recet.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="reveal.js" defer></script>
-    <title>Diário de intercâmbio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="recet.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="reveal.js" defer></script>
+  <title>Diário de intercâmbio</title>
 </head>
 
 <body>
-    <header>
-        <div class="caixa">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="diario.html">Diário</a></li>
-                    <li><a href="mapa.html">Mapa</a></li>
-                </ul>
-            </nav>
-        </div>
-        <button onclick="animarMenu()" id="botao-menu">
-            <span class="linha"></span>
-            <span class="linha"></span>
-            <span class="linha"></span>
-          </button>
-      
-          <script>
-            function animarMenu() {
-              const btn = document.getElementById('botao-menu')
-              btn.classList.toggle('ativar')
-            }
-          </script>
-      
-          <div class="caixa-mobile" id="caixa-mobile">
-            <nav>
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="diario.html">Diário</a></li>
-                <li><a href="mapa.html">Mapa</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-      
-        <script src="animar.js"></script>
-
-    <div class="titulo-principal">
-        <h1>Welcome to my exchange diary</h1>
+  <header>
+    <div class="caixa">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diario.html">Diário</a></li>
+          <li><a href="mapa.html">Mapa</a></li>
+        </ul>
+      </nav>
     </div>
+    <button onclick="animarMenu()" id="botao-menu">
+      <span class="linha"></span>
+      <span class="linha"></span>
+      <span class="linha"></span>
+    </button>
 
-    <div class="apresentacao">
-      <figure class="esquerda">
-        <img class="img-inicio" src="Sibelly.jpeg" alt="Imagem da criadora do site">
-        <figcaption>Ex-intercâmbista Sibelly</figcaption>
-      </figure>
-        <p class="direita">Olá!<br>Meu nome é Sibelly, eu criei este site para mostrar um pouco das experiências que eu tive durante o
-            meu intercâmbio na <strong>Nova Zelândia</strong>. Quando eu tinha 11 anos comecei a ter interesse em estudar em outro país,
-            mas eu sabia que não iria ser fácil, e foi em 2022 quando eu tinha 15 anos de idade eu passai no programa
-            Ganhando o Mundo. Bom, espero que vocês gostem!</p>
+    <script>
+      function animarMenu() {
+        const btn = document.getElementById('botao-menu')
+        btn.classList.toggle('ativar')
+      }
+    </script>
+
+    <div class="caixa-mobile" id="caixa-mobile">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diario.html">Diário</a></li>
+          <li><a href="mapa.html">Mapa</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <script src="animar.js"></script>
+
+  <div class="titulo-principal">
+    <h1>Welcome to my exchange diary</h1>
+  </div>
+
+  <div class="apresentacao">
+    <figure class="esquerda">
+      <img class="img-inicio" src="fotos/Sibelly.jpeg" alt="Imagem da criadora do site">
+      <figcaption>Ex-intercâmbista Sibelly</figcaption>
+    </figure>
+    <p class="direita">Olá!<br>Meu nome é Sibelly, eu criei este site para mostrar um pouco das experiências que tive
+      durante o
+      meu intercâmbio na <strong>Nova Zelândia</strong>. Meu sonho de fazer um intercâmbio de estudos internacional
+      surgiu quando eu tinha 11 anos. Desde mais nova, me esforçava nos estudos para que ele fosse realizado, nunca
+      desistindo do meu objetivo. Foi em 2022, aos 15 anos, que fui classificada no Programa
+      Ganhando o Mundo, no qual ganhei uma bolsa de intercâmbio para um país maravilhoso da Oceania. Espero que vocês
+      gostem do meu relado que marcou minha adolescência!</p>
+  </div>
 
 
-    <footer class="rodape">
-        <h2>Meu diário de intercâmbio <br>By Sibelly</h2>
-        <p>Siga minhas redes sociais</p>
-        <div class="redes-sociais">
-            <a href="https://www.facebook.com/sibellyvitoria.antonio" target="_blank"><img class="efeito-na-imagem1" src="facebook.png"
-                    alt="Facebook"></a>
-            <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img class="efeito-na-imagem2" src="instagram.png" alt="Instagram"></a>
-            <a href="https://www.tiktok.com/@sibellyvi?is_from_webapp=1&sender_device=pc" target="_blank"><img class="efeito-na-imagem3" src="tiktok.png" alt="Tiktok"></a>
-            <a href="https://www.youtube.com/@sibellyvi/featured" target="_blank"><img class="efeito-na-imagem4" src="youtube.png"
-                    alt="YouTube"></a>
-        </div>
-        <p class="copyright">&copy; Copyright Meu diário de intercâmbio - 2023-2025</p>
-    </footer>
+  <footer class="rodape">
+    <h2>Meu diário de intercâmbio <br>By Sibelly</h2>
+    <p>Siga minhas redes sociais</p>
+    <div class="redes-sociais">
+      <a href="https://www.facebook.com/sibellyvitoria.antonio" target="_blank"><img class="efeito-na-imagem1"
+          src="fotos/facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/sibellyvi/" target="_blank"><img class="efeito-na-imagem2"
+          src="fotos/instagram.png" alt="Instagram"></a>
+      <a href="https://www.tiktok.com/@sibellyvi?is_from_webapp=1&sender_device=pc" target="_blank"><img
+          class="efeito-na-imagem3" src="fotos/tiktok.png" alt="Tiktok"></a>
+      <a href="https://www.youtube.com/@sibellyvi/featured" target="_blank"><img class="efeito-na-imagem4"
+          src="fotos/youtube.png" alt="YouTube"></a>
+    </div>
+    <p class="copyright">&copy; Copyright Meu diário de intercâmbio - 2023-2025</p>
+  </footer>
 
 </body>
 
