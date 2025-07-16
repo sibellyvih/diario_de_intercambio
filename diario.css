@@ -284,14 +284,25 @@ h3 {
     padding: 40px;
   }
 
-  /*DIÁRIO*/
+  /*DIÁRIO IMAGENS E VIDEOS*/
   .imagens-diario {
     flex-direction: column;
     padding: 50px;
   }
 
   .imagens-diario img {
-    width: 100%;
+    width: 90%;
+  }
+
+  .videoS-diario {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .videoS-diario iframe {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
   }
 
   /*RODAPÉ*/
